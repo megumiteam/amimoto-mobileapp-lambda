@@ -14,3 +14,12 @@ $ serverless module install https://github.com/megumiteam/amimoto-mobileapp-lamb
 ```
 $ serverless function deploy
 ```
+# Local Test
+* Set up `event.json` on `<function name>/event.json`
+```
+{"undefined":{"instance_id":"<instance ID>"}}
+```
+* Run Lambda function
+```
+$ serverless function run
+```
