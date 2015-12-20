@@ -1,0 +1,38 @@
+{
+  "functions": {
+    "MobileappsStop-instance": {
+      "custom": {
+        "excludePatterns": [],
+        "envVars": []
+      },
+      "handler": "modules/mobileapps/stop-instance/handler.handler",
+      "timeout": 300,
+      "memorySize": 1024,
+      "endpoints": [
+        {
+          "path": "mobileapps/stop-instance",
+          "method": "GET",
+          "authorizationType": "none",
+          "apiKeyRequired": false,
+          "requestParameters": {},
+          "requestTemplates": {
+            "application/json": ""
+          },
+          "responses": {
+            "400": {
+              "statusCode": "400"
+            },
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {},
+              "responseModels": {},
+              "responseTemplates": {
+                "application/json": ""
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

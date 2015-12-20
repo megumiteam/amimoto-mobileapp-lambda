@@ -1,0 +1,38 @@
+{
+  "functions": {
+    "MobileappsDescribe-instances": {
+      "custom": {
+        "excludePatterns": [],
+        "envVars": []
+      },
+      "handler": "modules/mobileapps/describe-instances/handler.handler",
+      "timeout": 60,
+      "memorySize": 1024,
+      "endpoints": [
+        {
+          "path": "mobileapps/describe-instances",
+          "method": "GET",
+          "authorizationType": "none",
+          "apiKeyRequired": false,
+          "requestParameters": {},
+          "requestTemplates": {
+            "application/json": ""
+          },
+          "responses": {
+            "400": {
+              "statusCode": "400"
+            },
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {},
+              "responseModels": {},
+              "responseTemplates": {
+                "application/json": ""
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

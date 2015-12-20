@@ -1,0 +1,1 @@
+# amimoto-mobileapp-lambda
